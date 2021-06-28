@@ -1,0 +1,45 @@
+#x{
+  font-size: 30px;
+font-family: 'Candal', sans-serif;
+  color: white ;
+  font-weight: 900;
+margin-top: 60px;
+margin-left: 10px;
+}
+h1
+{
+  color:white;
+}
+p{
+color: white ;
+
+}
+#y
+{
+  background: transparent;
+text-align: center;
+padding-top: 45px;
+font-weight: 900;
+
+}
+body {
+  /* The image used */
+background: url(https://images.pexels.com/photos/3692887/pexels-photo-3692887.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  /* Full height */
+
+
+  /* Center and scale the image nicely */
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.t{
+  background-color: #46d930;
+  width: 30%;
+  margin-top: 10px;
+  text-align: center;
+  font-weight: 500;
+  margin-left: 20px;
+}

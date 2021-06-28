@@ -1,0 +1,21 @@
+body
+{
+background: url(https://images.pexels.com/photos/1267697/pexels-photo-1267697.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+background-position: center center;
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+
+}
+h1,h2
+{
+  color: white;
+}
+label
+{
+  color: white;
+}
+.form-group
+{
+  width: 25%;
+}
