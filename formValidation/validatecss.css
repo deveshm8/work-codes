@@ -1,0 +1,59 @@
+function clearerror()
+{
+    e=document.getElementsByClassName('formerror')
+    for(let item of e)
+    {
+        item.innerHTML="";
+    }
+}
+function seterror(id, error,x)
+{
+var elements=document.getElementsByClassName("formerror")[x];
+elements.innerHTML=error
+}
+
+
+function validateForm()
+    {          var returnval=true;
+        clearerror()
+        var name=document.forms['myform']['fname'].value;
+        if(name.length<5)
+        {
+            seterror('name', '  *length of name is too short',0);
+        returnval=false;
+        }
+        var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+        var mail=document.forms['myform']['femail'].value;
+        if(!mail.match(mailformat))
+        {
+            seterror('mail', '*invalid email',1);
+            returnval=false;
+        }
+        var phone=document.forms['myform']['fphone'].value;
+        if(phone.length!=10)
+        {
+            seterror('phone','*invalide mobile number',2)
+            returnval=false;
+        }
+        var pword=document.forms['myform']['fpass'].value
+        if (pword.length < 6) {
+            seterror("pword","*length of password should be greater than 6",3)
+            returnval=false;
+          } else if (pword.search(/[a-z]/) < 0) {
+            seterror("pword","password should needs a lower case letter",3)
+            returnval=false;
+        } else if(pword.search(/[A-Z]/) < 0) {
+            seterror("pword","Your password needs an upper case letter",3)
+            returnval=false;
+          } else  if (pword.search(/[0-9]/) < 0) {
+            seterror("pword","Your password needs a number",3)
+            returnval=false;
+          }
+          var cpass=document.forms['myform']['fcpass'].value
+          if(cpass!=pword)
+          {
+            seterror("cpass","confirm password not equal to password",4)
+            returnval=false;
+          }
+        return returnval;
+    }
