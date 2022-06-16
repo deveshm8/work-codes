@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Javascript Form Validation</title>
+  <link rel="stylesheet" href="vform.css">
+</head>
+<body> 
+  <h1>Welcome to form validation</h1>
+   <form action="" name="myform" onsubmit="return validateForm()" method="post">
+<div class="formdesign" id="uname">
+  Name:<input type="text" name="fname"><span class="formerror"></span>
+</div>
+<div class="formdesign" id="uemail">
+  Email:<input type="email" name="femail"><span class="formerror"></span>
+</div>
+<div class="formdesign" id="uphone">
+  Phone:<input type="tel" name="fphone" pattern="[0-9]{10}"><span class="formerror"></span>
+</div>
+<div class="formdesign" id="upass">
+  Password:<input type="password" name="fpass"><span class="formerror"></span>
+</div>
+<div class="formdesign" id="ucpass">
+  Confirm Password:<input type="password" name="fcpass"><span class="formerror"></span>
+</div>
+<input class="bu"type="submit" value="SUBMIT">
+
+   </form> 
+</body>
+<script src="vformjs.js"></script>
+</html>
